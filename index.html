@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#080907">
+  <title>MARY SECRET — تواصل معنا</title>
+
+  <!-- TikTok Pixel: replace YOUR_TIKTOK_PIXEL_ID with your real Pixel ID -->
+  <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;
+      var ttq=w[t]=w[t]||[];
+      ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}; 
+      for(var i=0;i<ttq.methods.length;i++) ttq.setAndDefer(ttq,ttq.methods[i]);
+      ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++) ttq.setAndDefer(e,ttq.methods[n]);return e};
+      ttq.load=function(e,n){
+        var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+        ttq._i=ttq._i||{}; ttq._i[e]=[]; ttq._i[e]._u=r;
+        ttq._t=ttq._t||{}; ttq._t[e]=+new Date;
+        ttq._o=ttq._o||{}; ttq._o[e]=n||{};
+        var i=document.createElement("script"); i.type="text/javascript"; i.async=true; i.src=r+"?sdkid="+e+"&lib="+t;
+        var s=document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(i,s);
+      };
+      ttq.load("YOUR_TIKTOK_PIXEL_ID");
+      ttq.page();
+    }(window, document, 'ttq');
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; }
+    body {
+      background: #080907;
+      color: #f4f0e8;
+      font-family: Tahoma, Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .page {
+      min-height: 100vh;
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 54px 22px 128px;
+      background:
+        radial-gradient(circle at 50% 45%, rgba(201,166,82,.055), transparent 28%),
+        radial-gradient(circle at 50% 75%, rgba(31,225,108,.035), transparent 24%),
+        linear-gradient(180deg, #0b0c0a 0%, #080907 100%);
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E");
+      z-index: 0;
+    }
+
+    .content { width: 100%; max-width: 560px; position: relative; z-index: 1; text-align: center; }
+
+    .brand {
+      margin-top: 22px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 14vw, 72px);
+      letter-spacing: .22em;
+      padding-left: .22em;
+      font-weight: 500;
+      color: #f4f0e8;
+    }
+
+    .brand-line {
+      width: 76px;
+      height: 1px;
+      margin: 18px auto 17px;
+      background: linear-gradient(90deg, transparent, #c9a652, transparent);
+    }
+
+    .tagline {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #c9a652;
+      font-size: 15px;
+      letter-spacing: .32em;
+      padding-left: .32em;
+    }
+
+    .hero {
+      margin-top: 165px;
+    }
+
+    .eyebrow {
+      color: #c9a652;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 8.5vw, 48px);
+      font-weight: 400;
+      line-height: 1.45;
+      letter-spacing: .01em;
+    }
+
+    h1 span { color: #dfc67e; }
+
+    .whatsapp-wrap {
+      margin: 40px auto 0;
+      width: 205px;
+      height: 205px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(37, 211, 102, .08);
+      box-shadow:
+        0 0 0 12px rgba(37,211,102,.045),
+        0 0 42px rgba(37,211,102,.24),
+        inset 0 0 30px rgba(37,211,102,.13);
+      animation: pulse 2.6s ease-in-out infinite;
+    }
+
+    .whatsapp {
+      width: 174px;
+      height: 174px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      background: radial-gradient(circle at 35% 28%, #36eb7b, #18c95b 70%);
+      border: 1px solid rgba(255,255,255,.26);
+      box-shadow: inset 0 1px 1px rgba(255,255,255,.28), 0 12px 30px rgba(0,0,0,.4);
+      transition: transform .2s ease;
+    }
+
+    .whatsapp:active { transform: scale(.96); }
+
+    .wa-icon {
+      width: 88px;
+      height: 88px;
+      fill: white;
+      filter: drop-shadow(0 2px 2px rgba(0,0,0,.14));
+    }
+
+    .click-label {
+      margin-top: 34px;
+      font-size: 17px;
+      color: #f0ece4;
+    }
+
+    .gold-line {
+      width: 58px;
+      height: 2px;
+      margin: 24px auto 0;
+      background: #b99b55;
+    }
+
+    .footer {
+      margin-top: 175px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #77776f;
+      letter-spacing: .14em;
+      font-size: 13px;
+      direction: ltr;
+    }
+
+    .lang-switch {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      display: flex;
+      gap: 7px;
+      z-index: 3;
+    }
+
+    .lang-btn {
+      border: 1px solid rgba(201,166,82,.35);
+      background: rgba(8,9,7,.75);
+      color: #b9b5ad;
+      border-radius: 20px;
+      padding: 7px 11px;
+      font-size: 12px;
+      cursor: pointer;
+      backdrop-filter: blur(5px);
+    }
+
+    .lang-btn.active { color: #dfc67e; border-color: #b99b55; }
+
+    .bottom-cta {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 10;
+      padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
+      background: linear-gradient(180deg, rgba(8,9,7,0), rgba(8,9,7,.96) 35%);
+    }
+
+    .bottom-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 13px;
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto;
+      min-height: 64px;
+      border-radius: 25px;
+      background: linear-gradient(180deg, #27db6a, #1bc75c);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 22px;
+      box-shadow: 0 8px 25px rgba(0,0,0,.38), 0 0 25px rgba(37,211,102,.14);
+    }
+
+    .mini-wa {
+      width: 28px;
+      height: 28px;
+      fill: white;
+    }
+
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50% { transform: scale(1.025); }
+    }
+
+    @media (max-width: 420px) {
+      .page { padding-top: 44px; }
+      .hero { margin-top: 140px; }
+      .footer { margin-top: 145px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <div class="grain"></div>
+
+    <div class="lang-switch">
+      <button class="lang-btn active" data-lang="ar">عربي</button>
+      <button class="lang-btn" data-lang="he">עברית</button>
+    </div>
+
+    <main class="content">
+      <div class="brand">MARY SECRET</div>
+      <div class="brand-line"></div>
+      <div class="tagline">ELEVATED EXPERIENCE</div>
+
+      <section class="hero">
+        <div class="eyebrow" data-ar="تواصل مباشر" data-he="צור קשר ישיר">تواصل مباشر</div>
+        <h1>
+          <span data-ar="اكتشف المزيد" data-he="גלה עוד">اكتشف المزيد</span><br>
+          <span data-ar="وتواصل معنا مباشرة" data-he="צור איתנו קשר ישירות">وتواصل معنا مباشرة</span>
+        </h1>
+
+        <div class="whatsapp-wrap">
+          <a class="whatsapp wa-link" href="https://wa.me/972567159600" aria-label="WhatsApp">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.54 0 .22 5.31.22 11.85c0 2.09.55 4.13 1.6 5.93L.12 24l6.37-1.67a11.84 11.84 0 0 0 5.59 1.42h.01c6.53 0 11.85-5.32 11.85-11.85 0-3.17-1.23-6.14-3.42-8.42ZM12.09 21.7h-.01a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.82 9.82 0 0 1-1.5-5.2C2.21 6.43 6.64 2 12.09 2a9.8 9.8 0 0 1 6.97 2.89 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.82-9.86 9.82Zm5.4-7.36c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="click-label" data-ar="اضغط هنا" data-he="לחץ כאן">اضغط هنا</div>
+        <div class="gold-line"></div>
+      </section>
+
+      <div class="footer">MARY SECRET · ALL RIGHTS RESERVED</div>
+    </main>
+  </div>
+
+  <div class="bottom-cta">
+    <a class="wa-link" href="https://wa.me/972567159600">
+      <span data-ar="راسلنا واتساب" data-he="שלחו לנו הודעה ב-WhatsApp">راسلنا واتساب</span>
+      <svg class="mini-wa" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.52 3.48A11.8 11.8 0 0 0 12.08 0C5.54 0 .22 5.31.22 11.85c0 2.09.55 4.13 1.6 5.93L.12 24l6.37-1.67a11.84 11.84 0 0 0 5.59 1.42h.01c6.53 0 11.85-5.32 11.85-11.85 0-3.17-1.23-6.14-3.42-8.42ZM12.09 21.7h-.01a9.82 9.82 0 0 1-5.01-1.37l-.36-.21-3.78.99 1.01-3.68-.23-.38a9.82 9.82 0 0 1-1.5-5.2C2.21 6.43 6.64 2 12.09 2a9.8 9.8 0 0 1 6.97 2.89 9.82 9.82 0 0 1 2.89 6.99c0 5.44-4.43 9.82-9.86 9.82Zm5.4-7.36c-.3-.15-1.77-.87-2.05-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.71.63.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll('.lang-btn');
+    const translatable = document.querySelectorAll('[data-ar][data-he]');
+
+    function setLanguage(lang) {
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'rtl';
+
+      translatable.forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+
+      buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.lang === lang));
+      localStorage.setItem('landingLanguage', lang);
+    }
+
+    buttons.forEach(btn => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
+
+    const saved = localStorage.getItem('landingLanguage');
+    if (saved === 'he') setLanguage('he');
+
+    // TikTok event: tracks WhatsApp button clicks.
+    document.querySelectorAll('.wa-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.ttq && typeof ttq.track === 'function') {
+          ttq.track('Contact', { channel: 'WhatsApp' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
